@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#2c021f, #150127);
+    font-family: system-ui;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30;
+    width: 95%;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 30px;
+}
+
+header ul li a {
+    padding: 6px 12px;
+    border-radius: 20px;
+
+}
+
+header ul li a:hover,
+.active {
+    background-color: white;
+    color: #2c021f;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background:linear-gradient(to top, #2c021f,transparent)
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 106vh;
+
+}
+
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+
+.landskape {
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    transform: translateY(-130px);
+}
+
+.content{
+    color: white;
+    padding: 30px;
+
+}
+.content h2{
+    margin: 20;
+    font-size: 30px;
+}
+.content p{
+    margin: 20px;
+}
